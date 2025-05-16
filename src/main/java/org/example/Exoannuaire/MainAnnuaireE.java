@@ -10,5 +10,7 @@ public class MainAnnuaireE {
         annuaire.addEntrepriseToAnnuaire("Machin",4577734,"Dunkerque","bidule");
 
         annuaire.showAllNameEntreprise();
+
+        new IHMconsole().startMenu();
     }
 }

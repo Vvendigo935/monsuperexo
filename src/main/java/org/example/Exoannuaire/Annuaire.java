@@ -18,10 +18,12 @@ public class Annuaire {
         this.entreprises.add(entreprise);
     }}
 
-    public void showAllNameEntreprise(){
+    public List<String> showAllNameEntreprise(){
+        List<String> entreprisesNoms = new ArrayList<>();
         for(int i = 0; i < this.entreprises.size(); i++ ){
             System.out.println(i+") "+this.entreprises.get(i).getNom());
-        }
+            entreprisesNoms.add(i+") "+this.entreprises.get(i).getNom());
+        }return entreprisesNoms;
     }
 
     public void showDetailsEntreprise(int indice){
